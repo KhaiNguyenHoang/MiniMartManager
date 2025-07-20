@@ -50,7 +50,6 @@ namespace MiniMartManager.ViewModels
             var viewModel = new AddEditProductViewModel();
             var addEditProductView = new Views.AddEditProductView { DataContext = viewModel };
             var dialogResult = addEditProductView.ShowDialog();
-            MessageBox.Show($"AddProduct ShowDialog() returned: {dialogResult}", "Debug ProductManagement", MessageBoxButton.OK, MessageBoxImage.Information);
             if (dialogResult == true)
             {
                 LoadProducts(); // Refresh the list if saved
@@ -62,7 +61,6 @@ namespace MiniMartManager.ViewModels
             var viewModel = new AddEditProductViewModel(product);
             var addEditProductView = new Views.AddEditProductView { DataContext = viewModel };
             var dialogResult = addEditProductView.ShowDialog();
-            MessageBox.Show($"EditProduct ShowDialog() returned: {dialogResult}", "Debug ProductManagement", MessageBoxButton.OK, MessageBoxImage.Information);
             if (dialogResult == true)
             {
                 LoadProducts(); // Refresh the list if saved
@@ -72,14 +70,13 @@ namespace MiniMartManager.ViewModels
         private void DeleteProduct(Product? product)
         {
             if (product == null) return;
-            if (MessageBox.Show($"Are you sure you want to delete {product.Name}?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Are you sure you want to delete {product.Name}?", "Confirm Delete",
+                    MessageBoxButton.YesNo, MessageBoxImage.Warning) != MessageBoxResult.Yes) return;
+            using (var context = new MiniMartDbContext())
             {
-                using (var context = new MiniMartDbContext())
-                {
-                    context.Products.Remove(product);
-                    context.SaveChanges();
-                    LoadProducts(); // Refresh the list
-                }
+                context.Products.Remove(product);
+                context.SaveChanges();
+                LoadProducts(); // Refresh the list
             }
         }
     }

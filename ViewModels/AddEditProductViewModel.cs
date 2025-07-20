@@ -63,10 +63,61 @@ namespace MiniMartManager.ViewModels
             {
                 if (Product.Id == 0) // New product
                 {
+                    if (context.Products.Any(p => p.Name == Product.Name))
+                    {
+                        MessageBox.Show("Product with this name already exists.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+
+                    if (Product.CategoryId == 0)
+                    {
+                        MessageBox.Show("Please select a category.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    if (Product.Price <= 0)
+                    {
+                        MessageBox.Show("Price cannot be negative.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    if (Product.StockQuantity <= 0)
+                    {
+                        MessageBox.Show("Stock quantity cannot be negative.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    if (Product.Name.Trim().Length == 0)
+                    {
+                        MessageBox.Show("Product name cannot be empty.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
                     context.Products.Add(Product);
                 }
                 else // Existing product
                 {
+                    if (Product.CategoryId == 0)
+                    {
+                        MessageBox.Show("Please select a category.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    if (Product.Price <= 0)
+                    {
+                        MessageBox.Show("Price cannot be negative.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    if (Product.StockQuantity <= 0)
+                    {
+                        MessageBox.Show("Stock quantity cannot be negative.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    if (Product.Name.Trim().Length == 0)
+                    {
+                        MessageBox.Show("Product name cannot be empty.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
                     context.Products.Update(Product);
                 }
                 context.SaveChanges();
