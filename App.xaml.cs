@@ -47,6 +47,8 @@ public partial class App : Application
         services.AddTransient<RegisterViewModel>();
         services.AddTransient<SalesViewModel>();
         services.AddTransient<OrderProcessingViewModel>();
+        services.AddTransient<UserOrderHistoryViewModel>();
+        services.AddTransient<UserProfileViewModel>();
 
 
         // Views
@@ -63,6 +65,8 @@ public partial class App : Application
         services.AddTransient<RegisterView>();
         services.AddTransient<SalesView>();
         services.AddTransient<OrderProcessingView>();
+        services.AddTransient<UserOrderHistoryView>();
+        services.AddTransient<UserProfileView>();
     }
 
     protected override void OnStartup(StartupEventArgs e)

@@ -171,3 +171,7 @@ D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\MiniMartManager.genruntim
 D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\ref\MiniMartManager.dll
 D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\Views\OrderProcessingView.g.cs
 D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\Views\OrderProcessingView.baml
+D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\Views\UserOrderHistoryView.g.cs
+D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\Views\UserOrderHistoryView.baml
+D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\Views\UserProfileView.g.cs
+D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\Views\UserProfileView.baml

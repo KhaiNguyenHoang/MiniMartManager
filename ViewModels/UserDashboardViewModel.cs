@@ -36,6 +36,8 @@ namespace MiniMartManager.ViewModels
         public IRelayCommand AddToCartCommand { get; }
         public IRelayCommand RemoveFromCartCommand { get; }
         public IRelayCommand PlaceOrderCommand { get; }
+        public IRelayCommand NavigateToOrderHistoryCommand { get; }
+        public IRelayCommand NavigateToUserProfileCommand { get; }
 
         public UserDashboardViewModel(INavigationService navigationService, MiniMartDbContext context)
         {
@@ -51,6 +53,8 @@ namespace MiniMartManager.ViewModels
             RemoveFromCartCommand = new RelayCommand<OrderDetail>(RemoveFromCart);
             PlaceOrderCommand = new RelayCommand(PlaceOrder, CanPlaceOrder);
             NavigateToSalesCommand = new RelayCommand(() => _navigationService.NavigateTo<SalesView, SalesViewModel>());
+            NavigateToOrderHistoryCommand = new RelayCommand(() => _navigationService.NavigateTo<UserOrderHistoryView, UserOrderHistoryViewModel>());
+            NavigateToUserProfileCommand = new RelayCommand(() => _navigationService.NavigateTo<UserProfileView, UserProfileViewModel>());
 
             CartItems.CollectionChanged += (sender, e) => UpdateCartTotal();
         }
