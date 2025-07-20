@@ -29,6 +29,16 @@ namespace MiniMartManager.ViewModels
         [ObservableProperty]
         private int _quantityToAddToCart = 1;
 
+        partial void OnSelectedProductChanged(Product? value)
+        {
+            AddToCartCommand.NotifyCanExecuteChanged();
+        }
+
+        partial void OnQuantityToAddToCartChanged(int value)
+        {
+            AddToCartCommand.NotifyCanExecuteChanged();
+        }
+
         [ObservableProperty]
         private decimal _cartTotal;
 
@@ -38,6 +48,7 @@ namespace MiniMartManager.ViewModels
         public IRelayCommand PlaceOrderCommand { get; }
         public IRelayCommand NavigateToOrderHistoryCommand { get; }
         public IRelayCommand NavigateToUserProfileCommand { get; }
+        public IRelayCommand LogoutCommand { get; }
 
         public UserDashboardViewModel(INavigationService navigationService, MiniMartDbContext context)
         {
@@ -55,6 +66,7 @@ namespace MiniMartManager.ViewModels
             NavigateToSalesCommand = new RelayCommand(() => _navigationService.NavigateTo<SalesView, SalesViewModel>());
             NavigateToOrderHistoryCommand = new RelayCommand(() => _navigationService.NavigateTo<UserOrderHistoryView, UserOrderHistoryViewModel>());
             NavigateToUserProfileCommand = new RelayCommand(() => _navigationService.NavigateTo<UserProfileView, UserProfileViewModel>());
+            LogoutCommand = new RelayCommand(() => _navigationService.NavigateTo<LoginView, LoginViewModel>());
 
             CartItems.CollectionChanged += (sender, e) => UpdateCartTotal();
         }
@@ -71,10 +83,23 @@ namespace MiniMartManager.ViewModels
                 return;
             }
 
+            // Validate stock quantity
+            if (SelectedProduct.StockQuantity < QuantityToAddToCart)
+            {
+                MessageBox.Show($"Not enough stock for {SelectedProduct.Name}. Available: {SelectedProduct.StockQuantity}", "Out of Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             var existingCartItem = CartItems.FirstOrDefault(item => item.ProductId == SelectedProduct.Id);
 
             if (existingCartItem != null)
             {
+                // Validate stock quantity for existing item
+                if (SelectedProduct.StockQuantity < (existingCartItem.Quantity + QuantityToAddToCart))
+                {
+                    MessageBox.Show($"Adding {QuantityToAddToCart} more of {SelectedProduct.Name} would exceed available stock. Available: {SelectedProduct.StockQuantity - existingCartItem.Quantity}", "Out of Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
                 existingCartItem.Quantity += QuantityToAddToCart;
             }
             else
@@ -111,19 +136,17 @@ namespace MiniMartManager.ViewModels
             {
                 return;
             }
-
-            // For simplicity, assume a default user for now. In a real app, this would be the logged-in user.
-            var currentUser = _context.Users.FirstOrDefault(u => u.Username == "admin"); // Or get from a session/login service
-            if (currentUser == null)
+            
+            if (CurrentUserService.CurrentUserId == 0)
             {
-                MessageBox.Show("No user found to place order.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No user logged in. Please log in again.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
             var newOrder = new Order
             {
                 OrderDate = DateTime.Now,
-                UserId = currentUser.Id,
+                UserId = CurrentUserService.CurrentUserId,
                 TotalAmount = CartTotal,
                 Status = OrderStatus.Pending,
                 OrderDetails = CartItems.ToList()
@@ -132,9 +155,30 @@ namespace MiniMartManager.ViewModels
             _context.Orders.Add(newOrder);
             await _context.SaveChangesAsync();
 
-            MessageBox.Show($"Order placed successfully! Order ID: {newOrder.Id}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Starting stock update...", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            // Update product stock
+            foreach (var item in CartItems)
+            {
+                var productToUpdate = _context.Products.Find(item.ProductId);
+                if (productToUpdate != null)
+                {
+                    MessageBox.Show($"Updating stock for {productToUpdate.Name}: Old Stock = {productToUpdate.StockQuantity}, Quantity Ordered = {item.Quantity}", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
+                    productToUpdate.StockQuantity -= item.Quantity;
+                    MessageBox.Show($"New Stock = {productToUpdate.StockQuantity}", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Product with ID {item.ProductId} not found for stock update.", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+            await _context.SaveChangesAsync(); // Save changes to product stock
+            MessageBox.Show("Stock update completed.", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            MessageBox.Show("Order placed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             CartItems.Clear(); // Clear cart after placing order
             UpdateCartTotal();
+            LoadProducts(); // Reload products to reflect updated stock
         }
 
         private bool CanPlaceOrder()
@@ -145,6 +189,7 @@ namespace MiniMartManager.ViewModels
         private void UpdateCartTotal()
         {
             CartTotal = CartItems.Sum(item => item.Quantity * item.Price);
+            PlaceOrderCommand.NotifyCanExecuteChanged();
         }
     }
 }

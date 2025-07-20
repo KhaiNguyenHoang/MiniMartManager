@@ -69,7 +69,8 @@ namespace MiniMartManager.ViewModels
                 context.SaveChanges();
                 MessageBox.Show("Registration successful!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                _navigationService.NavigateTo<LoginView, LoginViewModel>();
+                CurrentUserService.CurrentUserId = newUser.Id; // Set current user ID after successful registration
+                _navigationService.NavigateTo<UserDashboardView, UserDashboardViewModel>(); // Navigate directly to dashboard
             }
         }
     }

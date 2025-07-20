@@ -6,31 +6,66 @@
              xmlns:local="clr-namespace:MiniMartManager.Views"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Margin="10">
-            <Button Content="Back" Command="{Binding BackCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 10 0"/>
-            <TextBlock Text="User Profile" Style="{StaticResource MaterialDesignHeadline4TextBlock}" VerticalAlignment="Center"/>
-        </StackPanel>
+        <!-- Header Section -->
+        <Border Grid.Row="0" Background="White" BorderBrush="#E0E0E0" BorderThickness="0 0 0 1" Padding="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Back" Command="{Binding BackCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 20 0"/>
+                <TextBlock Grid.Column="1" Text="User Profile" Style="{StaticResource MaterialDesignHeadline4TextBlock}" VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
 
-        <StackPanel Grid.Row="1" Margin="20">
-            <TextBlock Text="User Information" Style="{StaticResource MaterialDesignHeadline5TextBlock}" Margin="0 0 0 10"/>
-            <TextBlock Text="Username:" Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-            <TextBlock Text="{Binding CurrentUser.Username}" Style="{StaticResource MaterialDesignBody2TextBlock}" Margin="0 0 0 20"/>
+        <!-- Main Content Area -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="20" Width="600">
 
-            <TextBlock Text="Change Password" Style="{StaticResource MaterialDesignHeadline5TextBlock}" Margin="0 0 0 10"/>
-            <PasswordBox materialDesign:HintAssist.Hint="Old Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 0 0 10"
-                         materialDesign:PasswordBoxAssist.Password="{Binding OldPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <PasswordBox materialDesign:HintAssist.Hint="New Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 0 0 10"
-                         materialDesign:PasswordBoxAssist.Password="{Binding NewPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <PasswordBox materialDesign:HintAssist.Hint="Confirm New Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 0 0 20"
-                         materialDesign:PasswordBoxAssist.Password="{Binding ConfirmNewPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Content="Change Password" Command="{Binding ChangePasswordCommand}" Style="{StaticResource MaterialDesignRaisedButton}"/>
-        </StackPanel>
+                <!-- User Information Card -->
+                <materialDesign:Card UniformCornerRadius="8" Margin="0 0 0 20" Padding="20">
+                    <materialDesign:Card.Effect>
+                        <DropShadowEffect ShadowDepth="3" Direction="270" Color="Black" Opacity="0.2" BlurRadius="5"/>
+                    </materialDesign:Card.Effect>
+                    <StackPanel>
+                        <TextBlock Text="User Information" Style="{StaticResource MaterialDesignHeadline5TextBlock}" Margin="0 0 0 10"/>
+                        <Grid Margin="0 0 0 10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Username:" Style="{StaticResource MaterialDesignBody1TextBlock}" VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="1" Text="{Binding CurrentUser.Username}" Style="{StaticResource MaterialDesignBody2TextBlock}" VerticalAlignment="Center"/>
+                        </Grid>
+                        <!-- Add more user info fields here if needed -->
+                    </StackPanel>
+                </materialDesign:Card>
+
+                <!-- Change Password Card -->
+                <materialDesign:Card UniformCornerRadius="8" Padding="20">
+                    <materialDesign:Card.Effect>
+                        <DropShadowEffect ShadowDepth="3" Direction="270" Color="Black" Opacity="0.2" BlurRadius="5"/>
+                    </materialDesign:Card.Effect>
+                    <StackPanel>
+                        <TextBlock Text="Change Password" Style="{StaticResource MaterialDesignHeadline5TextBlock}" Margin="0 0 0 15"/>
+                        <PasswordBox materialDesign:HintAssist.Hint="Old Password" Style="{StaticResource MaterialDesignOutlinedPasswordBox}" Margin="0 0 0 10"
+                                     materialDesign:PasswordBoxAssist.Password="{Binding OldPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <PasswordBox materialDesign:HintAssist.Hint="New Password" Style="{StaticResource MaterialDesignOutlinedPasswordBox}" Margin="0 0 0 10"
+                                     materialDesign:PasswordBoxAssist.Password="{Binding NewPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <PasswordBox materialDesign:HintAssist.Hint="Confirm New Password" Style="{StaticResource MaterialDesignOutlinedPasswordBox}" Margin="0 0 0 20"
+                                     materialDesign:PasswordBoxAssist.Password="{Binding ConfirmNewPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <Button Content="Change Password" Command="{Binding ChangePasswordCommand}" Style="{StaticResource MaterialDesignRaisedButton}" HorizontalAlignment="Right" Margin="0 10 0 0"/>
+                    </StackPanel>
+                </materialDesign:Card>
+
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </UserControl>

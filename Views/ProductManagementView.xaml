@@ -41,7 +41,7 @@
                     </DataGridTextColumn.ElementStyle>
                 </DataGridTextColumn>
                 <DataGridTextColumn Header="Price" Binding="{Binding Price, StringFormat=C}" Width="160"/>
-                <DataGridTextColumn Header="Stock" Binding="{Binding Stock}" Width="160"/>
+                <DataGridTextColumn Header="Stock Quantity" Binding="{Binding StockQuantity}" Width="160"/>
                 <DataGridTextColumn Header="Category" Binding="{Binding Category.Name}" Width="160"/>
                 <DataGridTemplateColumn Header="Actions" Width="180">
                     <DataGridTemplateColumn.CellTemplate>

@@ -43,10 +43,12 @@ public partial class LoginViewModel : ObservableObject
                 MessageBox.Show("Login successful!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 if (user.Role == "Admin")
                 {
+                    CurrentUserService.CurrentUserId = user.Id; // Set current user ID
                     _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>();
                 }
                 else
                 {
+                    CurrentUserService.CurrentUserId = user.Id; // Set current user ID
                     _navigationService.NavigateTo<UserDashboardView, UserDashboardViewModel>();
                 }
             }

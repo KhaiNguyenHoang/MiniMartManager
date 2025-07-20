@@ -12,7 +12,9 @@ namespace MiniMartManager.ViewModels
         public IRelayCommand NavigateToProductManagementCommand { get; }
         public IRelayCommand NavigateToCategoryManagementCommand { get; }
         public IRelayCommand NavigateToUserManagementCommand { get; }
-        
+        public IRelayCommand NavigateToSalesCommand { get; }
+        public IRelayCommand NavigateToOrderProcessingCommand { get; }
+        public IRelayCommand LogoutCommand { get; }
 
         public AdminDashboardViewModel(INavigationService navigationService)
         {
@@ -22,9 +24,7 @@ namespace MiniMartManager.ViewModels
             NavigateToUserManagementCommand = new RelayCommand(() => _navigationService.NavigateTo<UserManagementView, UserManagementViewModel>());
             NavigateToSalesCommand = new RelayCommand(() => _navigationService.NavigateTo<SalesView, SalesViewModel>());
             NavigateToOrderProcessingCommand = new RelayCommand(() => _navigationService.NavigateTo<OrderProcessingView, OrderProcessingViewModel>());
+            LogoutCommand = new RelayCommand(() => _navigationService.NavigateTo<LoginView, LoginViewModel>());
         }
-
-        public IRelayCommand NavigateToSalesCommand { get; }
-        public IRelayCommand NavigateToOrderProcessingCommand { get; }
     }
 }

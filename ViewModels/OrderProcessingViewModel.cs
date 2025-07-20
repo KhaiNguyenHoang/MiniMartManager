@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Linq;
+using System.Windows;
 using MiniMartManager.Services;
 using MiniMartManager.Views;
 
@@ -76,6 +77,17 @@ namespace MiniMartManager.ViewModels
             if (SelectedOrder != null && (SelectedOrder.Status == OrderStatus.Pending || SelectedOrder.Status == OrderStatus.Processing))
             {
                 SelectedOrder.Status = OrderStatus.Cancelled;
+
+                // Increase stock quantity for cancelled order items
+                foreach (var detail in SelectedOrder.OrderDetails)
+                {
+                    var product = await _context.Products.FindAsync(detail.ProductId);
+                    if (product != null)
+                    {
+                        product.StockQuantity += detail.Quantity;
+                    }
+                }
+
                 await _context.SaveChangesAsync();
                 await LoadPendingOrders(); // Refresh the list
             }

@@ -26,7 +26,7 @@
             <TextBox
                 materialDesign:HintAssist.Hint="Stock Quantity"
                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                Text="{Binding Product.Stock, UpdateSourceTrigger=PropertyChanged}"
+                Text="{Binding Product.StockQuantity, UpdateSourceTrigger=PropertyChanged}"
                 Margin="0 0 0 10"/>
 
             <ComboBox

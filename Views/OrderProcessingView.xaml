@@ -23,7 +23,7 @@
                   IsReadOnly="True"
                   Margin="10">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Order ID" Binding="{Binding OrderId}" Width="Auto"/>
+                <DataGridTextColumn Header="Order ID" Binding="{Binding Id}" Width="Auto"/>
                 <DataGridTextColumn Header="User" Binding="{Binding User.Username}" Width="Auto"/>
                 <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate, StringFormat='{}{0:dd/MM/yyyy HH:mm}'}" Width="Auto"/>
                 <DataGridTextColumn Header="Total Amount" Binding="{Binding TotalAmount, StringFormat='{}{0:C}'}" Width="Auto"/>

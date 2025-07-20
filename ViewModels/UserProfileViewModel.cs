@@ -34,9 +34,7 @@ namespace MiniMartManager.ViewModels
         {
             _context = context;
             _navigationService = navigationService;
-            // In a real application, you would get the current logged-in user's ID from a session or authentication service
-            // For demonstration, let's assume user with ID 1 is logged in.
-            CurrentUser = _context.Users.FirstOrDefault(u => u.Id == 1); 
+            CurrentUser = _context.Users.FirstOrDefault(u => u.Id == CurrentUserService.CurrentUserId); 
 
             ChangePasswordCommand = new RelayCommand(ChangePassword);
             BackCommand = new RelayCommand(() => _navigationService.NavigateTo<UserDashboardView, UserDashboardViewModel>());

@@ -19,7 +19,8 @@ namespace MiniMartManager.ViewModels
         [ObservableProperty]
         private string windowTitle = string.Empty;
 
-        public bool? DialogResult { get; private set; }
+        [ObservableProperty]
+        private bool? _dialogResult;
 
         public IRelayCommand SaveCommand { get; }
         public IRelayCommand CancelCommand { get; }
@@ -52,6 +53,12 @@ namespace MiniMartManager.ViewModels
 
         private void Save()
         {
+            if (Product.StockQuantity < 0)
+            {
+                MessageBox.Show("Stock quantity cannot be negative.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             using (var context = new MiniMartDbContext())
             {
                 if (Product.Id == 0) // New product

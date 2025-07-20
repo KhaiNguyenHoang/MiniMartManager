@@ -49,7 +49,9 @@ namespace MiniMartManager.ViewModels
         {
             var viewModel = new AddEditProductViewModel();
             var addEditProductView = new Views.AddEditProductView { DataContext = viewModel };
-            if (addEditProductView.ShowDialog() == true)
+            var dialogResult = addEditProductView.ShowDialog();
+            MessageBox.Show($"AddProduct ShowDialog() returned: {dialogResult}", "Debug ProductManagement", MessageBoxButton.OK, MessageBoxImage.Information);
+            if (dialogResult == true)
             {
                 LoadProducts(); // Refresh the list if saved
             }
@@ -59,7 +61,9 @@ namespace MiniMartManager.ViewModels
         {
             var viewModel = new AddEditProductViewModel(product);
             var addEditProductView = new Views.AddEditProductView { DataContext = viewModel };
-            if (addEditProductView.ShowDialog() == true)
+            var dialogResult = addEditProductView.ShowDialog();
+            MessageBox.Show($"EditProduct ShowDialog() returned: {dialogResult}", "Debug ProductManagement", MessageBoxButton.OK, MessageBoxImage.Information);
+            if (dialogResult == true)
             {
                 LoadProducts(); // Refresh the list if saved
             }

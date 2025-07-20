@@ -7,6 +7,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows;
 using MiniMartManager.Services;
 using MiniMartManager.Views;
 
@@ -60,9 +61,12 @@ namespace MiniMartManager.ViewModels
                 .ToListAsync();
 
             SalesReportData.Clear();
-            foreach (var item in salesData)
+            if (salesData.Any())
             {
-                SalesReportData.Add(item);
+                foreach (var item in salesData)
+                {
+                    SalesReportData.Add(item);
+                }
             }
         }
 

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows;
 using MiniMartManager.Services;
 using MiniMartManager.Views;
 
@@ -35,9 +36,12 @@ namespace MiniMartManager.ViewModels
 
         private async Task LoadUserOrders()
         {
-            // In a real application, you would get the current logged-in user's ID
-            // For now, let's assume a default user or fetch all orders for demonstration
-            var userId = 1; // Example: Assuming user with ID 1 is logged in
+            var userId = CurrentUserService.CurrentUserId; // Get current user ID from service
+
+            if (userId == 0) // If no user is logged in or ID is not set
+            {
+                return;
+            }
 
             var orders = await _context.Orders
                 .Include(o => o.User)
