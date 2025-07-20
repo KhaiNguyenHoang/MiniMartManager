@@ -30,7 +30,7 @@ public partial class LoginViewModel : ObservableObject
     {
         _navigationService = navigationService;
         LoginCommand = new RelayCommand(Login);
-        NavigateToRegisterCommand = new RelayCommand(() => _navigationService.NavigateTo<RegisterView, RegisterViewModel>(() => new RegisterViewModel(_navigationService)));
+        NavigateToRegisterCommand = new RelayCommand(() => _navigationService.NavigateTo<RegisterView, RegisterViewModel>());
     }
 
     private void Login()
@@ -43,11 +43,11 @@ public partial class LoginViewModel : ObservableObject
                 MessageBox.Show("Login successful!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 if (user.Role == "Admin")
                 {
-                    _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>(() => new AdminDashboardViewModel(_navigationService));
+                    _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>();
                 }
                 else
                 {
-                    _navigationService.NavigateTo<UserDashboardView, UserDashboardViewModel>(() => new UserDashboardViewModel(_navigationService));
+                    _navigationService.NavigateTo<UserDashboardView, UserDashboardViewModel>();
                 }
             }
             else

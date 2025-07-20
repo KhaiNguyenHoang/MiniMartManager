@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MiniMartManager.Views"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1000">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -25,7 +26,7 @@
                 <Button Content="Manage Products" Command="{Binding NavigateToProductManagementCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
                 <Button Content="Manage Categories" Command="{Binding NavigateToCategoryManagementCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
                 <Button Content="Manage Users" Command="{Binding NavigateToUserManagementCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
-                <Button Content="Sales Report" Command="{Binding NavigateToSalesReportCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
+                <Button Content="Sales Report" Command="{Binding NavigateToSalesCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
                 <Button Content="Process Orders" Command="{Binding NavigateToOrderProcessingCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Width="250"/>
             </StackPanel>
         </materialDesign:Card>

@@ -32,7 +32,7 @@ namespace MiniMartManager.ViewModels
             AddCategoryCommand = new RelayCommand(AddCategory);
             EditCategoryCommand = new RelayCommand<Category>(EditCategory);
             DeleteCategoryCommand = new RelayCommand<Category>(DeleteCategory);
-            BackCommand = new RelayCommand(() => _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>(() => new AdminDashboardViewModel(_navigationService)));
+            BackCommand = new RelayCommand(() => _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>());
         }
 
         private void LoadCategories()
@@ -93,8 +93,9 @@ namespace MiniMartManager.ViewModels
             }
         }
 
-        private void DeleteCategory(Category category)
+        private void DeleteCategory(Category? category)
         {
+            if (category == null) return;
             if (MessageBox.Show($"Are you sure you want to delete category '{category.Name}'? This will also affect products in this category.", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
                 using (var context = new MiniMartDbContext())

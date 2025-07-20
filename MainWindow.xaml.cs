@@ -1,7 +1,5 @@
 ﻿using System.Windows;
 using MiniMartManager.Services;
-using MiniMartManager.ViewModels;
-using MiniMartManager.Views;
 
 namespace MiniMartManager;
 
@@ -12,10 +10,10 @@ public partial class MainWindow : Window
 {
     private readonly INavigationService _navigationService;
 
-    public MainWindow()
+    public MainWindow(INavigationService navigationService)
     {
         InitializeComponent();
-        _navigationService = new NavigationService(MainContentControl);
-        _navigationService.NavigateTo<LoginView, LoginViewModel>(() => new LoginViewModel(_navigationService));
+        _navigationService = navigationService;
+        ((NavigationService)_navigationService).SetContentControl(MainContentControl);
     }
 }

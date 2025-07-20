@@ -24,7 +24,7 @@ namespace MiniMartManager.ViewModels
         public IRelayCommand SaveCommand { get; }
         public IRelayCommand CancelCommand { get; }
 
-        public AddEditProductViewModel(Product productToEdit = null)
+        public AddEditProductViewModel(Product? productToEdit = null)
         {
             Product = productToEdit ?? new Product(); // Initialize Product here
             LoadCategories();

@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:MiniMartManager.Views"
              xmlns:vm="clr-namespace:MiniMartManager.ViewModels"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1000">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">

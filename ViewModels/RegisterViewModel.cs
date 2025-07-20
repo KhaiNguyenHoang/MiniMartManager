@@ -38,7 +38,7 @@ namespace MiniMartManager.ViewModels
         {
             _navigationService = navigationService;
             RegisterCommand = new RelayCommand(Register);
-            BackToLoginCommand = new RelayCommand(() => _navigationService.NavigateTo<LoginView, LoginViewModel>(() => new LoginViewModel(_navigationService)));
+            BackToLoginCommand = new RelayCommand(() => _navigationService.NavigateTo<LoginView, LoginViewModel>());
         }
 
         private void Register()
@@ -69,7 +69,7 @@ namespace MiniMartManager.ViewModels
                 context.SaveChanges();
                 MessageBox.Show("Registration successful!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                _navigationService.NavigateTo<LoginView, LoginViewModel>(() => new LoginViewModel(_navigationService));
+                _navigationService.NavigateTo<LoginView, LoginViewModel>();
             }
         }
     }

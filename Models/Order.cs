@@ -12,5 +12,14 @@ namespace MiniMartManager.Models
         public User User { get; set; } = new User();
         public decimal TotalAmount { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; } = new ObservableCollection<OrderDetail>();
+        public OrderStatus Status { get; set; }
+    }
+
+    public enum OrderStatus
+    {
+        Pending,
+        Processing,
+        Completed,
+        Cancelled
     }
 }

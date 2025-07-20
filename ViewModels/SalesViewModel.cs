@@ -3,184 +3,84 @@ using CommunityToolkit.Mvvm.Input;
 using MiniMartManager.Data;
 using MiniMartManager.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Windows;
-using System;
+using System.Threading.Tasks;
+using MiniMartManager.Services;
+using MiniMartManager.Views;
 
 namespace MiniMartManager.ViewModels
 {
     public partial class SalesViewModel : ObservableObject
     {
-        public ObservableCollection<Product> AvailableProducts { get; set; } = new ObservableCollection<Product>();
-        public ObservableCollection<CartItem> CartItems { get; set; } = new ObservableCollection<CartItem>();
+        private readonly MiniMartDbContext _context;
+        private readonly INavigationService _navigationService;
 
         [ObservableProperty]
-        private Product selectedProduct = null!;
+        private DateTime _startDate = DateTime.Today.AddMonths(-1);
 
         [ObservableProperty]
-        private int quantityToAdd;
+        private DateTime _endDate = DateTime.Today;
 
         [ObservableProperty]
-        private decimal totalAmount;
+        private ObservableCollection<SaleReportItem> _salesReportData = new ObservableCollection<SaleReportItem>();
 
-        public IRelayCommand AddToCartCommand { get; }
-        public IRelayCommand ProcessSaleCommand { get; }
-
-        public SalesViewModel()
+        public SalesViewModel(MiniMartDbContext context, INavigationService navigationService)
         {
-            AvailableProducts = new ObservableCollection<Product>();
-            CartItems = new ObservableCollection<CartItem>();
-            LoadAvailableProducts();
-
-            AddToCartCommand = new RelayCommand(AddToCart, CanAddToCart);
-            ProcessSaleCommand = new RelayCommand(ProcessSale, CanProcessSale);
-
-            CartItems.CollectionChanged += (s, e) => CalculateTotalAmount();
+            _context = context;
+            _navigationService = navigationService;
+            GenerateReportCommand = new AsyncRelayCommand(GenerateSalesReport);
+            BackCommand = new RelayCommand(() => _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>());
+            LoadInitialReport();
         }
 
-        private void LoadAvailableProducts()
+        public IAsyncRelayCommand GenerateReportCommand { get; }
+        public IRelayCommand BackCommand { get; }
+
+        private async Task GenerateSalesReport()
         {
-            using (var context = new MiniMartDbContext())
+            if (StartDate > EndDate)
             {
-                AvailableProducts.Clear();
-                foreach (var product in context.Products.Include(p => p.Category).ToList())
+                // Optionally show an error message to the user
+                return;
+            }
+
+            var salesData = await _context.Orders
+                .Where(o => o.OrderDate >= StartDate && o.OrderDate <= EndDate)
+                .SelectMany(o => o.OrderDetails)
+                .GroupBy(od => od.Product.Name)
+                .Select(g => new SaleReportItem
                 {
-                    AvailableProducts.Add(product);
-                }
+                    ProductName = g.Key,
+                    QuantitySold = g.Sum(od => od.Quantity),
+                    TotalRevenue = g.Sum(od => od.Quantity * od.Price)
+                })
+                .OrderByDescending(item => item.TotalRevenue)
+                .ToListAsync();
+
+            SalesReportData.Clear();
+            foreach (var item in salesData)
+            {
+                SalesReportData.Add(item);
             }
         }
 
-        private void AddToCart()
+        private async void LoadInitialReport()
         {
-            if (SelectedProduct == null)
-            {
-                MessageBox.Show("Please select a product.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            if (QuantityToAdd <= 0)
-            {
-                MessageBox.Show("Quantity must be greater than 0.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            if (QuantityToAdd > SelectedProduct.Stock)
-            {
-                MessageBox.Show($"Not enough stock for {SelectedProduct.Name}. Available: {SelectedProduct.Stock}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            var existingCartItem = CartItems.FirstOrDefault(item => item.Product.Id == SelectedProduct.Id);
-            if (existingCartItem != null)
-            {
-                existingCartItem.Quantity += QuantityToAdd;
-                existingCartItem.Subtotal = existingCartItem.Quantity * existingCartItem.UnitPrice;
-            }
-            else
-            {
-                CartItems.Add(new CartItem
-                {
-                    Product = SelectedProduct,
-                    Quantity = QuantityToAdd,
-                    UnitPrice = SelectedProduct.Price,
-                    Subtotal = QuantityToAdd * SelectedProduct.Price
-                });
-            }
-
-            SelectedProduct.Stock -= QuantityToAdd; // Update stock in UI
-            QuantityToAdd = 0; // Reset quantity input
-            (AddToCartCommand as RelayCommand)?.NotifyCanExecuteChanged();
-            (ProcessSaleCommand as RelayCommand)?.NotifyCanExecuteChanged();
-        }
-
-        private bool CanAddToCart()
-        {
-            return SelectedProduct != null && QuantityToAdd > 0 && QuantityToAdd <= SelectedProduct.Stock;
-        }
-
-        private void CalculateTotalAmount()
-        {
-            TotalAmount = CartItems.Sum(item => item.Subtotal);
-        }
-
-        private void ProcessSale()
-        {
-            if (!CartItems.Any())
-            {
-                MessageBox.Show("Cart is empty.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            using (var context = new MiniMartDbContext())
-            {
-                using (var transaction = context.Database.BeginTransaction())
-                {
-                    try
-                    {
-                        var order = new Order
-                        {
-                            OrderDate = DateTime.Now,
-                            UserId = 1, // TODO: Replace with actual logged-in user ID
-                            TotalAmount = TotalAmount,
-                            OrderDetails = new ObservableCollection<OrderDetail>()
-                        };
-                        context.Orders.Add(order);
-                        context.SaveChanges(); // Save order to get its ID
-
-                        foreach (var item in CartItems)
-                        {
-                            var orderDetail = new OrderDetail
-                            {
-                                OrderId = order.Id,
-                                ProductId = item.Product.Id,
-                                Quantity = item.Quantity,
-                                UnitPrice = item.UnitPrice
-                            };
-                            order.OrderDetails.Add(orderDetail);
-
-                            // Update product stock in database
-                            var productInDb = context.Products.Find(item.Product.Id);
-                            if (productInDb != null)
-                            {
-                                productInDb.Stock -= item.Quantity;
-                            }
-                        }
-                        context.SaveChanges();
-                        transaction.Commit();
-
-                        MessageBox.Show("Sale processed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                        CartItems.Clear();
-                        LoadAvailableProducts(); // Refresh product list
-                        TotalAmount = 0;
-                    }
-                    catch (Exception ex)
-                    {
-                        transaction.Rollback();
-                        MessageBox.Show($"Error processing sale: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    }
-                }
-            }
-        }
-
-        private bool CanProcessSale()
-        {
-            return CartItems.Any();
+            await GenerateSalesReport();
         }
     }
 
-    public partial class CartItem : ObservableObject
+    public partial class SaleReportItem : ObservableObject
     {
         [ObservableProperty]
-        private Product product;
+        private string _productName = string.Empty;
 
         [ObservableProperty]
-        private int quantity;
+        private int _quantitySold;
 
         [ObservableProperty]
-        private decimal unitPrice;
-
-        [ObservableProperty]
-        private decimal subtotal;
+        private decimal _totalRevenue;
     }
 }

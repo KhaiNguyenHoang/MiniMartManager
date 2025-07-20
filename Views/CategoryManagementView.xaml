@@ -21,7 +21,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="0" Content="Back" Command="{Binding BackCommand}" Style="{StaticResource MaterialDesignOutlinedButton}" VerticalAlignment="Center"/>
-            <TextBlock Grid.Column="1" Text="Category Management" Style="{StaticResource MaterialDesignHeadline4TextBlock}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Text="Category Management" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBox
                     materialDesign:HintAssist.Hint="New Category Name"

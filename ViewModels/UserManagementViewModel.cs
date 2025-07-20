@@ -31,7 +31,7 @@ namespace MiniMartManager.ViewModels
             AddUserCommand = new RelayCommand(AddUser);
             EditUserCommand = new RelayCommand<User>(EditUser);
             DeleteUserCommand = new RelayCommand<User>(DeleteUser);
-            BackCommand = new RelayCommand(() => _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>(() => new AdminDashboardViewModel(_navigationService)));
+            BackCommand = new RelayCommand(() => _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>());
         }
 
         private void LoadUsers()
@@ -58,8 +58,9 @@ namespace MiniMartManager.ViewModels
             MessageBox.Show($"Edit User: {user.Username}");
         }
 
-        private void DeleteUser(User user)
+        private void DeleteUser(User? user)
         {
+            if (user == null) return;
             if (MessageBox.Show($"Are you sure you want to delete user '{user.Username}'?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
                 using (var context = new MiniMartDbContext())

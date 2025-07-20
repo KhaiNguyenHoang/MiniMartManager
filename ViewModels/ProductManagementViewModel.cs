@@ -30,7 +30,7 @@ namespace MiniMartManager.ViewModels
             AddProductCommand = new RelayCommand(AddProduct);
             EditProductCommand = new RelayCommand<Product>(EditProduct);
             DeleteProductCommand = new RelayCommand<Product>(DeleteProduct);
-            BackCommand = new RelayCommand(() => _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>(() => new AdminDashboardViewModel(_navigationService)));
+            BackCommand = new RelayCommand(() => _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>());
         }
 
         private void LoadProducts()
@@ -65,8 +65,9 @@ namespace MiniMartManager.ViewModels
             }
         }
 
-        private void DeleteProduct(Product product)
+        private void DeleteProduct(Product? product)
         {
+            if (product == null) return;
             if (MessageBox.Show($"Are you sure you want to delete {product.Name}?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
                 using (var context = new MiniMartDbContext())

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\PRNProject\MiniMartManager\App.xaml
-10-1980870210
+11271867354
 
-43-529470624
+46-855192588
 233-2023157480
-MainWindow.xaml;Views\AddEditProductView.xaml;Views\AdminDashboardView.xaml;Views\CategoryManagementView.xaml;Views\LoginView.xaml;Views\ProductManagementView.xaml;Views\RegisterView.xaml;Views\SalesView.xaml;Views\UserDashboardView.xaml;Views\UserManagementView.xaml;
+MainWindow.xaml;Views\AddEditProductView.xaml;Views\AdminDashboardView.xaml;Views\CategoryManagementView.xaml;Views\LoginView.xaml;Views\OrderProcessingView.xaml;Views\ProductManagementView.xaml;Views\RegisterView.xaml;Views\SalesView.xaml;Views\UserDashboardView.xaml;Views\UserManagementView.xaml;
 
 False
 

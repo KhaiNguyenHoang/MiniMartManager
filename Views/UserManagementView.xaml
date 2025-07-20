@@ -32,10 +32,10 @@
                   IsReadOnly="True"
                   Margin="20">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
-                <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="*"/>
-                <DataGridTextColumn Header="Role" Binding="{Binding Role}" Width="Auto"/>
-                <DataGridTemplateColumn Header="Actions">
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="160"/>
+                <DataGridTextColumn Header="Role" Binding="{Binding Role}" Width="160"/>
+                <DataGridTemplateColumn Header="Actions" Width="180">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">

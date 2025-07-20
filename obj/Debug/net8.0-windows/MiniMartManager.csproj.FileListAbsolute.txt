@@ -169,3 +169,5 @@ D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\refint\MiniMartManager.dl
 D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\MiniMartManager.pdb
 D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\MiniMartManager.genruntimeconfig.cache
 D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\ref\MiniMartManager.dll
+D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\Views\OrderProcessingView.g.cs
+D:\PRNProject\MiniMartManager\obj\Debug\net8.0-windows\Views\OrderProcessingView.baml

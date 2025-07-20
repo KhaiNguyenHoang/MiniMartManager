@@ -17,10 +17,14 @@ namespace MiniMartManager.ViewModels
         public AdminDashboardViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            NavigateToProductManagementCommand = new RelayCommand(() => _navigationService.NavigateTo<ProductManagementView, ProductManagementViewModel>(() => new ProductManagementViewModel(_navigationService)));
-            NavigateToCategoryManagementCommand = new RelayCommand(() => _navigationService.NavigateTo<CategoryManagementView, CategoryManagementViewModel>(() => new CategoryManagementViewModel(_navigationService)));
-            NavigateToUserManagementCommand = new RelayCommand(() => _navigationService.NavigateTo<UserManagementView, UserManagementViewModel>(() => new UserManagementViewModel(_navigationService)));
-            
+            NavigateToProductManagementCommand = new RelayCommand(() => _navigationService.NavigateTo<ProductManagementView, ProductManagementViewModel>());
+            NavigateToCategoryManagementCommand = new RelayCommand(() => _navigationService.NavigateTo<CategoryManagementView, CategoryManagementViewModel>());
+            NavigateToUserManagementCommand = new RelayCommand(() => _navigationService.NavigateTo<UserManagementView, UserManagementViewModel>());
+            NavigateToSalesCommand = new RelayCommand(() => _navigationService.NavigateTo<SalesView, SalesViewModel>());
+            NavigateToOrderProcessingCommand = new RelayCommand(() => _navigationService.NavigateTo<OrderProcessingView, OrderProcessingViewModel>());
         }
+
+        public IRelayCommand NavigateToSalesCommand { get; }
+        public IRelayCommand NavigateToOrderProcessingCommand { get; }
     }
 }
