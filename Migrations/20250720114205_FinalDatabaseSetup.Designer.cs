@@ -11,8 +11,8 @@ using MiniMartManager.Data;
 namespace MiniMartManager.Migrations
 {
     [DbContext(typeof(MiniMartDbContext))]
-    [Migration("20250720113356_SeedAdminUser")]
-    partial class SeedAdminUser
+    [Migration("20250720114205_FinalDatabaseSetup")]
+    partial class FinalDatabaseSetup
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,6 +78,7 @@ namespace MiniMartManager.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("StockQuantity")
@@ -118,7 +119,7 @@ namespace MiniMartManager.Migrations
                         new
                         {
                             Id = 1,
-                            HashedPassword = "$2a$11$zJouAcVflDvqbyCHOoQl2OY8qLZlXe5blgiH8W2cvlQpIiOPVyBBu",
+                            HashedPassword = "$2a$11$4a/MW.AE6nhZHZzvyq5v.uut.kHAapikTw.i80Tpi384..JRKN.L.",
                             Role = "Admin",
                             Username = "admin"
                         });

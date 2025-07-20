@@ -1,8 +1,12 @@
 ﻿
 FD:\PRNProject\MiniMartManager\App.xaml;;
 FD:\PRNProject\MiniMartManager\MainWindow.xaml;;
-FD:\PRNProject\MiniMartManager\Views\LoginView.xaml;;
-FD:\PRNProject\MiniMartManager\Views\RegisterView.xaml;;
 FD:\PRNProject\MiniMartManager\Views\AdminDashboardView.xaml;;
+FD:\PRNProject\MiniMartManager\Views\CategoryManagementView.xaml;;
+FD:\PRNProject\MiniMartManager\Views\LoginView.xaml;;
+FD:\PRNProject\MiniMartManager\Views\ProductManagementView.xaml;;
+FD:\PRNProject\MiniMartManager\Views\RegisterView.xaml;;
+FD:\PRNProject\MiniMartManager\Views\SalesView.xaml;;
 FD:\PRNProject\MiniMartManager\Views\UserDashboardView.xaml;;
+FD:\PRNProject\MiniMartManager\Views\UserManagementView.xaml;;
 

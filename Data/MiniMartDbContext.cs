@@ -8,6 +8,8 @@ namespace MiniMartManager.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -28,8 +30,12 @@ namespace MiniMartManager.Data
 
             // Seed default admin user
             modelBuilder.Entity<User>().HasData(
-                new User { Id = 1, Username = "admin", HashedPassword = BCrypt.Net.BCrypt.HashPassword("admin"), Role = "Admin" }
+                new User { Id = 1, Username = "admin", HashedPassword = "$2a$11$4a/MW.AE6nhZHZzvyq5v.uut.kHAapikTw.i80Tpi384..JRKN.L.", Role = "Admin" }
             );
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasPrecision(18, 2);
         }
     }
 }

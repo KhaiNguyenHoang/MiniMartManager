@@ -7,7 +7,23 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1000">
-    <Grid>
-        <TextBlock Text="User Dashboard" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <materialDesign:Card
+            Padding="30"
+            UniformCornerRadius="10"
+            Effect="{StaticResource MaterialDesignShadowDepth3}"
+            Width="400">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <materialDesign:PackIcon
+                    Kind="AccountCircle"
+                    Width="80"
+                    Height="80"
+                    HorizontalAlignment="Center"
+                    Foreground="{DynamicResource PrimaryHueMidBrush}"
+                    Margin="0 0 0 20"/>
+                <TextBlock Text="User Dashboard" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 30"/>
+                <Button Content="Process Sale" Command="{Binding NavigateToSalesCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Width="250"/>
+            </StackPanel>
+        </materialDesign:Card>
     </Grid>
 </UserControl>

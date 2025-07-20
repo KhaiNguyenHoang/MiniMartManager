@@ -43,11 +43,11 @@ public partial class LoginViewModel : ObservableObject
                 MessageBox.Show("Login successful!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 if (user.Role == "Admin")
                 {
-                    _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>(() => new AdminDashboardViewModel());
+                    _navigationService.NavigateTo<AdminDashboardView, AdminDashboardViewModel>(() => new AdminDashboardViewModel(_navigationService));
                 }
                 else
                 {
-                    _navigationService.NavigateTo<UserDashboardView, UserDashboardViewModel>(() => new UserDashboardViewModel());
+                    _navigationService.NavigateTo<UserDashboardView, UserDashboardViewModel>(() => new UserDashboardViewModel(_navigationService));
                 }
             }
             else

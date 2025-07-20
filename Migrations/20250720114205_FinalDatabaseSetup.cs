@@ -5,7 +5,7 @@
 namespace MiniMartManager.Migrations
 {
     /// <inheritdoc />
-    public partial class SeedAdminUser : Migration
+    public partial class FinalDatabaseSetup : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -13,7 +13,7 @@ namespace MiniMartManager.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "HashedPassword", "Role", "Username" },
-                values: new object[] { 1, "$2a$11$zJouAcVflDvqbyCHOoQl2OY8qLZlXe5blgiH8W2cvlQpIiOPVyBBu", "Admin", "admin" });
+                values: new object[] { 1, "$2a$11$4a/MW.AE6nhZHZzvyq5v.uut.kHAapikTw.i80Tpi384..JRKN.L.", "Admin", "admin" });
         }
 
         /// <inheritdoc />

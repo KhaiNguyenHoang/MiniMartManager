@@ -1,0 +1,1 @@
+RR4D:\PRNProject\MiniMartManager\MiniMartManager.csproj¢net8.0-windowsòCSharp12

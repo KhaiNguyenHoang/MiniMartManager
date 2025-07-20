@@ -7,7 +7,27 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1000">
-    <Grid>
-        <TextBlock Text="Admin Dashboard" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <materialDesign:Card
+            Padding="30"
+            UniformCornerRadius="10"
+            Effect="{StaticResource MaterialDesignShadowDepth3}"
+            Width="400">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <materialDesign:PackIcon
+                    Kind="ShieldAccount"
+                    Width="80"
+                    Height="80"
+                    HorizontalAlignment="Center"
+                    Foreground="{DynamicResource PrimaryHueMidBrush}"
+                    Margin="0 0 0 20"/>
+                <TextBlock Text="Admin Dashboard" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 30"/>
+                <Button Content="Manage Products" Command="{Binding NavigateToProductManagementCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
+                <Button Content="Manage Categories" Command="{Binding NavigateToCategoryManagementCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
+                <Button Content="Manage Users" Command="{Binding NavigateToUserManagementCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
+                <Button Content="Sales Report" Command="{Binding NavigateToSalesReportCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 0 0 10" Width="250"/>
+                <Button Content="Process Orders" Command="{Binding NavigateToOrderProcessingCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Width="250"/>
+            </StackPanel>
+        </materialDesign:Card>
     </Grid>
 </UserControl>
