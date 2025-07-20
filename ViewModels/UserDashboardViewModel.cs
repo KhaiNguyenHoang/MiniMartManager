@@ -86,7 +86,7 @@ namespace MiniMartManager.ViewModels
             // Validate stock quantity
             if (SelectedProduct.StockQuantity < QuantityToAddToCart)
             {
-                MessageBox.Show($"Not enough stock for {SelectedProduct.Name}. Available: {SelectedProduct.StockQuantity}", "Out of Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
+                // MessageBox.Show($"Not enough stock for {SelectedProduct.Name}. Available: {SelectedProduct.StockQuantity}", "Out of Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -97,7 +97,7 @@ namespace MiniMartManager.ViewModels
                 // Validate stock quantity for existing item
                 if (SelectedProduct.StockQuantity < (existingCartItem.Quantity + QuantityToAddToCart))
                 {
-                    MessageBox.Show($"Adding {QuantityToAddToCart} more of {SelectedProduct.Name} would exceed available stock. Available: {SelectedProduct.StockQuantity - existingCartItem.Quantity}", "Out of Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    // MessageBox.Show($"Adding {QuantityToAddToCart} more of {SelectedProduct.Name} would exceed available stock. Available: {SelectedProduct.StockQuantity - existingCartItem.Quantity}", "Out of Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
                 existingCartItem.Quantity += QuantityToAddToCart;
@@ -155,7 +155,7 @@ namespace MiniMartManager.ViewModels
             _context.Orders.Add(newOrder);
             await _context.SaveChangesAsync();
 
-            MessageBox.Show("Starting stock update...", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
+            // MessageBox.Show("Starting stock update...", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
 
             // Update product stock
             foreach (var item in CartItems)
@@ -163,17 +163,17 @@ namespace MiniMartManager.ViewModels
                 var productToUpdate = _context.Products.Find(item.ProductId);
                 if (productToUpdate != null)
                 {
-                    MessageBox.Show($"Updating stock for {productToUpdate.Name}: Old Stock = {productToUpdate.StockQuantity}, Quantity Ordered = {item.Quantity}", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
+                    // MessageBox.Show($"Updating stock for {productToUpdate.Name}: Old Stock = {productToUpdate.StockQuantity}, Quantity Ordered = {item.Quantity}", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
                     productToUpdate.StockQuantity -= item.Quantity;
-                    MessageBox.Show($"New Stock = {productToUpdate.StockQuantity}", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
+                    // MessageBox.Show($"New Stock = {productToUpdate.StockQuantity}", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
-                    MessageBox.Show($"Product with ID {item.ProductId} not found for stock update.", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    // MessageBox.Show($"Product with ID {item.ProductId} not found for stock update.", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
             await _context.SaveChangesAsync(); // Save changes to product stock
-            MessageBox.Show("Stock update completed.", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
+            // MessageBox.Show("Stock update completed.", "Debug Stock", MessageBoxButton.OK, MessageBoxImage.Information);
 
             MessageBox.Show("Order placed successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             CartItems.Clear(); // Clear cart after placing order
