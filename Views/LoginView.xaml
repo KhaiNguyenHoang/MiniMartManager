@@ -1,0 +1,74 @@
+<UserControl x:Class="MiniMartManager.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MiniMartManager.Views"
+             xmlns:vm="clr-namespace:MiniMartManager.ViewModels"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <materialDesign:Card
+                Padding="30"
+                UniformCornerRadius="10"
+                Width="350">
+                <materialDesign:Card.Effect>
+                    <DropShadowEffect ShadowDepth="3" Direction="270" Color="Black" Opacity="0.2" BlurRadius="5"/>
+                </materialDesign:Card.Effect>
+            <StackPanel>
+                <!-- Logo/Icon -->
+                <materialDesign:PackIcon
+                    Kind="Storefront"
+                    Width="60"
+                    Height="60"
+                    HorizontalAlignment="Center"
+                    Foreground="{DynamicResource PrimaryHueMidBrush}"
+                    Margin="0 0 0 20"/>
+
+                <!-- Title -->
+                <TextBlock
+                    Text="Mini Mart Manager"
+                    FontSize="28"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Center"
+                    Margin="0 0 0 30"
+                    Foreground="{DynamicResource MaterialDesignBody}"/>
+
+                <!-- Username Input -->
+                <TextBox
+                    materialDesign:HintAssist.Hint="Username"
+                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                    Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"
+                    Margin="0 0 0 15"/>
+
+                <!-- Password Input -->
+                <PasswordBox
+                    x:Name="PasswordBox"
+                    materialDesign:HintAssist.Hint="Password"
+                    Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
+                    Margin="0 0 0 25"/>
+
+                <!-- Login Button -->
+                <Button
+                    Content="LOGIN"
+                    Command="{Binding LoginCommand}"
+                    Style="{StaticResource MaterialDesignRaisedButton}"
+                    materialDesign:ButtonAssist.CornerRadius="5"
+                    Height="40"
+                    Margin="0 0 0 15"/>
+
+                <!-- Register Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Don't have an account?" VerticalAlignment="Center" Margin="0 0 5 0"/>
+                    <Button
+                        Content="REGISTER NOW"
+                        Command="{Binding NavigateToRegisterCommand}"
+                        Style="{StaticResource MaterialDesignFlatButton}"
+                        Foreground="{DynamicResource PrimaryHueMidBrush}"
+                        materialDesign:ButtonAssist.CornerRadius="5"/>
+                </StackPanel>
+            </StackPanel>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>
