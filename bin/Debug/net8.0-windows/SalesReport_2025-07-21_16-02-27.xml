@@ -1,0 +1,22 @@
+[
+  {
+    "ProductName": "V\u1EA3i lo\u1EA1i 4",
+    "QuantitySold": 10,
+    "TotalRevenue": 50.0000
+  },
+  {
+    "ProductName": "V\u1EA3i lo\u1EA1i 3",
+    "QuantitySold": 5,
+    "TotalRevenue": 15.0000
+  },
+  {
+    "ProductName": "V\u1EA3i lo\u1EA1i 1",
+    "QuantitySold": 5,
+    "TotalRevenue": 10.0000
+  },
+  {
+    "ProductName": "V\u1EA3i lo\u1EA1i 2",
+    "QuantitySold": 5,
+    "TotalRevenue": 5.0000
+  }
+]

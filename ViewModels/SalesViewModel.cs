@@ -5,9 +5,15 @@ using MiniMartManager.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.JavaScript;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Xml;
+using System.Xml.Serialization;
 using MiniMartManager.Services;
 using MiniMartManager.Views;
 
@@ -59,14 +65,25 @@ namespace MiniMartManager.ViewModels
                 })
                 .OrderByDescending(item => item.TotalRevenue)
                 .ToListAsync();
+            var fileName = $"SalesReport_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.json";
+            var json = JsonSerializer.Serialize(salesData, new JsonSerializerOptions { WriteIndented = true });
+            await using (StreamWriter sw = new(fileName, false, Encoding.UTF8))
+            {
+                await sw.WriteAsync(json);
+            }
 
             SalesReportData.Clear();
-            if (salesData.Any())
+            if (salesData.Count != 0)
             {
                 foreach (var item in salesData)
                 {
                     SalesReportData.Add(item);
                 }
+                MessageBox.Show($"Sales report generated successfully! Data file: {Directory.GetCurrentDirectory()}\\{fileName}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("No sales data found for the selected period.", "No Data", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 

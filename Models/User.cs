@@ -6,6 +6,6 @@ namespace MiniMartManager.Models
     {
         public string Username { get; set; } = string.Empty;
         public string HashedPassword { get; set; } = string.Empty;
-        public string Role { get; set; } = string.Empty; // e.g., "Admin", "Staff"
+        public string Role { get; set; } = string.Empty;
     }
 }

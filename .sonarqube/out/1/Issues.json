@@ -12,145 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "CS8625",
-          "level": "warning",
-          "message": "Cannot convert null literal to non-nullable reference type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 64,
-                  "endLine": 27,
-                  "endColumn": 68
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8622",
-          "level": "warning",
-          "message": "Nullability of reference types in type of parameter 'user' of 'void UserManagementViewModel.EditUser(User user)' doesn't match the target delegate 'Action<User?>' (possibly because of nullability attributes).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserManagementViewModel.cs",
-                "region": {
-                  "startLine": 32,
-                  "startColumn": 54,
-                  "endLine": 32,
-                  "endColumn": 62
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8622",
-          "level": "warning",
-          "message": "Nullability of reference types in type of parameter 'user' of 'void UserManagementViewModel.DeleteUser(User user)' doesn't match the target delegate 'Action<User?>' (possibly because of nullability attributes).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserManagementViewModel.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 56,
-                  "endLine": 33,
-                  "endColumn": 66
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8622",
-          "level": "warning",
-          "message": "Nullability of reference types in type of parameter 'category' of 'void CategoryManagementViewModel.EditCategory(Category category)' doesn't match the target delegate 'Action<Category?>' (possibly because of nullability attributes).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/CategoryManagementViewModel.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 62,
-                  "endLine": 33,
-                  "endColumn": 74
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8622",
-          "level": "warning",
-          "message": "Nullability of reference types in type of parameter 'category' of 'void CategoryManagementViewModel.DeleteCategory(Category category)' doesn't match the target delegate 'Action<Category?>' (possibly because of nullability attributes).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/CategoryManagementViewModel.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 64,
-                  "endLine": 34,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable field 'newCategoryName' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/CategoryManagementViewModel.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 16,
-                  "endLine": 27,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/CategoryManagementViewModel.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 24,
-                  "endLine": 18,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8618",
           "level": "warning",
           "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
@@ -338,6 +199,95 @@
         {
           "ruleId": "CS8622",
           "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'category' of 'void CategoryManagementViewModel.EditCategory(Category category)' doesn't match the target delegate 'Action<Category?>' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/CategoryManagementViewModel.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 62,
+                  "endLine": 33,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field 'newCategoryName' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/CategoryManagementViewModel.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 16,
+                  "endLine": 27,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/CategoryManagementViewModel.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 24,
+                  "endLine": 18,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field '_pendingOrders' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/OrderProcessingViewModel.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 16,
+                  "endLine": 26,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/OrderProcessingViewModel.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 45,
+                  "endLine": 21,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8622",
+          "level": "warning",
           "message": "Nullability of reference types in type of parameter 'product' of 'void ProductManagementViewModel.EditProduct(Product product)' doesn't match the target delegate 'Action<Product?>' (possibly because of nullability attributes).",
           "locations": [
             {
@@ -357,18 +307,690 @@
           }
         },
         {
-          "ruleId": "CS8622",
+          "ruleId": "CS0618",
           "level": "warning",
-          "message": "Nullability of reference types in type of parameter 'product' of 'void ProductManagementViewModel.DeleteProduct(Product product)' doesn't match the target delegate 'Action<Product?>' (possibly because of nullability attributes).",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/ProductManagementViewModel.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 40,
+                  "endLine": 21,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.CurrentUser' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 40,
+                  "endLine": 21,
+                  "endColumn": 143
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 39,
+                  "endLine": 25,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.CurrentUser' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 39,
+                  "endLine": 25,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.ProductName' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 143
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.ProductName' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 40,
+                  "endLine": 43,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.OldPassword' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 40,
+                  "endLine": 43,
+                  "endColumn": 143
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 39,
+                  "endLine": 47,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.OldPassword' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 39,
+                  "endLine": 47,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 40,
+                  "endLine": 65,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.NewPassword' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 40,
+                  "endLine": 65,
+                  "endColumn": 143
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 39,
+                  "endLine": 69,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.NewPassword' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 39,
+                  "endLine": 69,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.LoginViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.Username' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.LoginViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 140
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.LoginViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.Username' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.LoginViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 138
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 40,
+                  "endLine": 87,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.ConfirmNewPassword' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 40,
+                  "endLine": 87,
+                  "endColumn": 150
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 39,
+                  "endLine": 91,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.ConfirmNewPassword' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserProfileViewModel.g.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 39,
+                  "endLine": 91,
+                  "endColumn": 148
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CategoryManagementViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.NewCategoryName' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CategoryManagementViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CategoryManagementViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.NewCategoryName' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CategoryManagementViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8622",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'user' of 'void UserManagementViewModel.EditUser(User user)' doesn't match the target delegate 'Action<User?>' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserManagementViewModel.cs",
                 "region": {
                   "startLine": 32,
-                  "startColumn": 62,
+                  "startColumn": 54,
                   "endLine": 32,
-                  "endColumn": 75
+                  "endColumn": 62
                 }
               }
             }
@@ -387,11 +1009,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
                 "region": {
-                  "startLine": 22,
+                  "startLine": 43,
                   "startColumn": 40,
-                  "endLine": 22,
+                  "endLine": 43,
                   "endColumn": 131
                 }
               }
@@ -404,19 +1026,19 @@
         {
           "ruleId": "CS0618",
           "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.Product' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "message": "'__KnownINotifyPropertyChangingArgs.QuantitySold' is obsolete: 'This field is not intended to be referenced directly by user code'",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
                 "region": {
-                  "startLine": 22,
+                  "startLine": 43,
                   "startColumn": 40,
-                  "endLine": 22,
-                  "endColumn": 139
+                  "endLine": 43,
+                  "endColumn": 144
                 }
               }
             }
@@ -435,11 +1057,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
                 "region": {
-                  "startLine": 26,
+                  "startLine": 47,
                   "startColumn": 39,
-                  "endLine": 26,
+                  "endLine": 47,
                   "endColumn": 129
                 }
               }
@@ -452,19 +1074,19 @@
         {
           "ruleId": "CS0618",
           "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.Product' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "message": "'__KnownINotifyPropertyChangedArgs.QuantitySold' is obsolete: 'This field is not intended to be referenced directly by user code'",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
                 "region": {
-                  "startLine": 26,
+                  "startLine": 47,
                   "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 137
+                  "endLine": 47,
+                  "endColumn": 142
                 }
               }
             }
@@ -483,7 +1105,199 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.RegisterViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.Username' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.RegisterViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 140
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.RegisterViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.Username' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.RegisterViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 138
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 40,
+                  "endLine": 64,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.TotalRevenue' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 40,
+                  "endLine": 64,
+                  "endColumn": 144
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 39,
+                  "endLine": 68,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.TotalRevenue' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SaleReportItem.g.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 39,
+                  "endLine": 68,
+                  "endColumn": 142
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
                 "region": {
                   "startLine": 22,
                   "startColumn": 40,
@@ -507,7 +1321,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
                 "region": {
                   "startLine": 22,
                   "startColumn": 40,
@@ -531,7 +1345,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
                 "region": {
                   "startLine": 26,
                   "startColumn": 39,
@@ -555,7 +1369,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
                 "region": {
                   "startLine": 26,
                   "startColumn": 39,
@@ -675,102 +1489,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 40,
-                  "endLine": 43,
-                  "endColumn": 131
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.Quantity' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 40,
-                  "endLine": 43,
-                  "endColumn": 140
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 39,
-                  "endLine": 47,
-                  "endColumn": 129
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.Quantity' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 39,
-                  "endLine": 47,
-                  "endColumn": 138
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
                 "region": {
                   "startLine": 66,
@@ -867,11 +1585,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
                 "region": {
-                  "startLine": 64,
+                  "startLine": 87,
                   "startColumn": 40,
-                  "endLine": 64,
+                  "endLine": 87,
                   "endColumn": 131
                 }
               }
@@ -884,18 +1602,594 @@
         {
           "ruleId": "CS0618",
           "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.UnitPrice' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "message": "'__KnownINotifyPropertyChangingArgs.DialogResult' is obsolete: 'This field is not intended to be referenced directly by user code'",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
                 "region": {
-                  "startLine": 64,
+                  "startLine": 87,
                   "startColumn": 40,
-                  "endLine": 64,
+                  "endLine": 87,
+                  "endColumn": 144
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 39,
+                  "endLine": 91,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.DialogResult' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.AddEditProductViewModel.g.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 39,
+                  "endLine": 91,
+                  "endColumn": 142
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserOrderHistoryViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.UserOrders' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserOrderHistoryViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 142
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserOrderHistoryViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.UserOrders' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserOrderHistoryViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 140
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.OrderProcessingViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.PendingOrders' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.OrderProcessingViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.OrderProcessingViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.PendingOrders' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.OrderProcessingViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 143
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserOrderHistoryViewModel.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 40,
+                  "endLine": 43,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.SelectedOrder' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserOrderHistoryViewModel.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 40,
+                  "endLine": 43,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserOrderHistoryViewModel.g.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 39,
+                  "endLine": 47,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.SelectedOrder' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserOrderHistoryViewModel.g.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 39,
+                  "endLine": 47,
+                  "endColumn": 143
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.OrderProcessingViewModel.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 40,
+                  "endLine": 43,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.SelectedOrder' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.OrderProcessingViewModel.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 40,
+                  "endLine": 43,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.OrderProcessingViewModel.g.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 39,
+                  "endLine": 47,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.SelectedOrder' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.OrderProcessingViewModel.g.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 39,
+                  "endLine": 47,
+                  "endColumn": 143
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.AvailableProducts' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 149
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.AvailableProducts' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 40,
+                  "endLine": 44,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.CartItems' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 40,
+                  "endLine": 44,
                   "endColumn": 141
                 }
               }
@@ -915,11 +2209,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
                 "region": {
-                  "startLine": 68,
+                  "startLine": 48,
                   "startColumn": 39,
-                  "endLine": 68,
+                  "endLine": 48,
                   "endColumn": 129
                 }
               }
@@ -932,18 +2226,18 @@
         {
           "ruleId": "CS0618",
           "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.UnitPrice' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "message": "'__KnownINotifyPropertyChangedArgs.CartItems' is obsolete: 'This field is not intended to be referenced directly by user code'",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
                 "region": {
-                  "startLine": 68,
+                  "startLine": 48,
                   "startColumn": 39,
-                  "endLine": 68,
+                  "endLine": 48,
                   "endColumn": 139
                 }
               }
@@ -963,429 +2257,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
                 "region": {
-                  "startLine": 85,
+                  "startLine": 65,
                   "startColumn": 40,
-                  "endLine": 85,
-                  "endColumn": 131
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.Subtotal' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
-                "region": {
-                  "startLine": 85,
-                  "startColumn": 40,
-                  "endLine": 85,
-                  "endColumn": 140
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 39,
-                  "endLine": 89,
-                  "endColumn": 129
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.Subtotal' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CartItem.g.cs",
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 39,
-                  "endLine": 89,
-                  "endColumn": 138
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.RegisterViewModel.g.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 40,
-                  "endLine": 22,
-                  "endColumn": 131
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.Username' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.RegisterViewModel.g.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 40,
-                  "endLine": 22,
-                  "endColumn": 140
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.RegisterViewModel.g.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 129
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.Username' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.RegisterViewModel.g.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 138
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable field 'product' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
-                "region": {
-                  "startLine": 175,
-                  "startColumn": 25,
-                  "endLine": 175,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
-                "region": {
-                  "startLine": 175,
-                  "startColumn": 25,
-                  "endLine": 175,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.LoginViewModel.g.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 40,
-                  "endLine": 22,
-                  "endColumn": 131
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.Username' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.LoginViewModel.g.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 40,
-                  "endLine": 22,
-                  "endColumn": 140
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.LoginViewModel.g.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 129
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.Username' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.LoginViewModel.g.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 138
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CategoryManagementViewModel.g.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 40,
-                  "endLine": 22,
-                  "endColumn": 131
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.NewCategoryName' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CategoryManagementViewModel.g.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 40,
-                  "endLine": 22,
-                  "endColumn": 147
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CategoryManagementViewModel.g.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 129
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.NewCategoryName' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.CategoryManagementViewModel.g.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 145
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 40,
-                  "endLine": 22,
+                  "endLine": 65,
                   "endColumn": 131
                 }
               }
@@ -1405,11 +2281,491 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 40,
+                  "endLine": 65,
+                  "endColumn": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 39,
+                  "endLine": 69,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.SelectedProduct' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 39,
+                  "endLine": 69,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 40,
+                  "endLine": 86,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.QuantityToAddToCart' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 40,
+                  "endLine": 86,
+                  "endColumn": 151
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 39,
+                  "endLine": 90,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.QuantityToAddToCart' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 39,
+                  "endLine": 90,
+                  "endColumn": 149
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 40,
+                  "endLine": 107,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.CartTotal' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 40,
+                  "endLine": 107,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 39,
+                  "endLine": 111,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.CartTotal' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.UserDashboardViewModel.g.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 39,
+                  "endLine": 111,
+                  "endColumn": 139
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
                 "region": {
-                  "startLine": 22,
+                  "startLine": 21,
                   "startColumn": 40,
-                  "endLine": 22,
+                  "endLine": 21,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.StartDate' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 40,
+                  "endLine": 21,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 39,
+                  "endLine": 25,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.StartDate' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 39,
+                  "endLine": 25,
+                  "endColumn": 139
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 40,
+                  "endLine": 42,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.EndDate' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 40,
+                  "endLine": 42,
+                  "endColumn": 139
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 39,
+                  "endLine": 46,
+                  "endColumn": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangedArgs.EndDate' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 39,
+                  "endLine": 46,
+                  "endColumn": 137
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 40,
+                  "endLine": 64,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'__KnownINotifyPropertyChangingArgs.SalesReportData' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 40,
+                  "endLine": 64,
                   "endColumn": 147
                 }
               }
@@ -1431,198 +2787,6 @@
               "resultFile": {
                 "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
                 "region": {
-                  "startLine": 26,
-                  "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 129
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.SelectedProduct' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 39,
-                  "endLine": 26,
-                  "endColumn": 145
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 40,
-                  "endLine": 43,
-                  "endColumn": 131
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.QuantityToAdd' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 40,
-                  "endLine": 43,
-                  "endColumn": 145
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 39,
-                  "endLine": 47,
-                  "endColumn": 129
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.QuantityToAdd' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 39,
-                  "endLine": 47,
-                  "endColumn": 143
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 40,
-                  "endLine": 64,
-                  "endColumn": 131
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangingArgs.TotalAmount' is obsolete: 'This field is not intended to be referenced directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 40,
-                  "endLine": 64,
-                  "endColumn": 143
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs' is obsolete: 'This type is not intended to be used directly by user code'",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/obj/Debug/net8.0-windows/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/MiniMartManager.ViewModels.SalesViewModel.g.cs",
-                "region": {
                   "startLine": 68,
                   "startColumn": 39,
                   "endLine": 68,
@@ -1638,7 +2802,7 @@
         {
           "ruleId": "CS0618",
           "level": "warning",
-          "message": "'__KnownINotifyPropertyChangedArgs.TotalAmount' is obsolete: 'This field is not intended to be referenced directly by user code'",
+          "message": "'__KnownINotifyPropertyChangedArgs.SalesReportData' is obsolete: 'This field is not intended to be referenced directly by user code'",
           "suppressionStates": [
             "suppressedInSource"
           ],
@@ -1650,95 +2814,13 @@
                   "startLine": 68,
                   "startColumn": 39,
                   "endLine": 68,
-                  "endColumn": 141
+                  "endColumn": 145
                 }
               }
             }
           ],
           "properties": {
             "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "S1135",
-          "level": "warning",
-          "message": "Complete the task associated to this 'TODO' comment.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
-                "region": {
-                  "startLine": 124,
-                  "startColumn": 44,
-                  "endLine": 124,
-                  "endColumn": 48
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'Orders' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 23,
-                  "endLine": 22,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
-                "region": {
-                  "startLine": 59,
-                  "startColumn": 41,
-                  "endLine": 59,
-                  "endColumn": 49
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 24,
-                  "endLine": 82,
-                  "endColumn": 32
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 23,
-                  "endLine": 93,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
           }
         },
         {
@@ -1789,67 +2871,6 @@
                   "startColumn": 23,
                   "endLine": 92,
                   "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'OrderDetails' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 23,
-                  "endLine": 43,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
-                "region": {
-                  "startLine": 72,
-                  "startColumn": 24,
-                  "endLine": 72,
-                  "endColumn": 38
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 24,
-                  "endLine": 77,
-                  "endColumn": 38
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 23,
-                  "endLine": 90,
-                  "endColumn": 37
                 }
               }
             }
@@ -1949,60 +2970,18 @@
           }
         },
         {
-          "ruleId": "S3604",
-          "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 78,
-                  "endLine": 15,
-                  "endColumn": 115
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3604",
-          "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 71,
-                  "endLine": 16,
-                  "endColumn": 109
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1192",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'Error' 5 times.",
+          "message": "Define a constant instead of using this literal 'Orders' 4 times.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
                 "region": {
-                  "startLine": 58,
-                  "startColumn": 61,
-                  "endLine": 58,
-                  "endColumn": 68
+                  "startLine": 22,
+                  "startColumn": 23,
+                  "endLine": 22,
+                  "endColumn": 31
                 }
               }
             }
@@ -2010,45 +2989,211 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
                 "region": {
-                  "startLine": 64,
-                  "startColumn": 69,
-                  "endLine": 64,
-                  "endColumn": 76
+                  "startLine": 59,
+                  "startColumn": 41,
+                  "endLine": 59,
+                  "endColumn": 49
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
                 "region": {
-                  "startLine": 70,
-                  "startColumn": 117,
-                  "endLine": 70,
-                  "endColumn": 124
+                  "startLine": 82,
+                  "startColumn": 24,
+                  "endLine": 82,
+                  "endColumn": 32
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
                 "region": {
-                  "startLine": 111,
-                  "startColumn": 51,
-                  "endLine": 111,
-                  "endColumn": 58
+                  "startLine": 93,
+                  "startColumn": 23,
+                  "endLine": 93,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'OrderDetails' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 23,
+                  "endLine": 43,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 24,
+                  "endLine": 72,
+                  "endColumn": 38
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
                 "region": {
-                  "startLine": 160,
-                  "startColumn": 81,
-                  "endLine": 160,
-                  "endColumn": 88
+                  "startLine": 77,
+                  "startColumn": 24,
+                  "endLine": 77,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720115351_AllNewFeatures.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 23,
+                  "endLine": 90,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Error' 9 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 83,
+                  "endLine": 68,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 70,
+                  "endLine": 73,
+                  "endColumn": 77
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 70,
+                  "endLine": 79,
+                  "endColumn": 77
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 79,
+                  "endLine": 85,
+                  "endColumn": 86
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 74,
+                  "endLine": 91,
+                  "endColumn": 81
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 70,
+                  "endLine": 100,
+                  "endColumn": 77
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 70,
+                  "endLine": 106,
+                  "endColumn": 77
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 79,
+                  "endLine": 112,
+                  "endColumn": 86
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 74,
+                  "endLine": 118,
+                  "endColumn": 81
                 }
               }
             }
@@ -2059,7 +3204,11 @@
               "0": null,
               "1": null,
               "2": null,
-              "3": null
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null
             }
           }
         },
@@ -2082,6 +3231,79 @@
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Error' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserProfileViewModel.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 52,
+                  "endLine": 47,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserProfileViewModel.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 72,
+                  "endLine": 53,
+                  "endColumn": 79
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserProfileViewModel.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 63,
+                  "endLine": 59,
+                  "endColumn": 70
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserProfileViewModel.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 64,
+                  "endLine": 65,
+                  "endColumn": 71
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserProfileViewModel.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 85,
+                  "endLine": 71,
+                  "endColumn": 92
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
           }
         },
         {
@@ -2127,18 +3349,18 @@
           }
         },
         {
-          "ruleId": "S2325",
+          "ruleId": "S2068",
           "level": "warning",
-          "message": "Make 'Application_DispatcherUnhandledException' a static method.",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/App.xaml.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/Data/MiniMartDbContext.cs",
                 "region": {
-                  "startLine": 14,
-                  "startColumn": 18,
-                  "endLine": 14,
-                  "endColumn": 58
+                  "startLine": 17,
+                  "startColumn": 41,
+                  "endLine": 17,
+                  "endColumn": 140
                 }
               }
             }
@@ -2172,45 +3394,40 @@
           }
         },
         {
-          "ruleId": "CA1859",
-          "level": "note",
-          "message": "Change type of field '_navigationService' from 'MiniMartManager.Services.INavigationService' to 'MiniMartManager.Services.NavigationService' for improved performance",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/MainWindow.xaml.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 41,
-                  "endLine": 13,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2068",
+          "ruleId": "S1066",
           "level": "warning",
-          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "message": "Merge this if statement with the enclosing one.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Data/MiniMartDbContext.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/Views/AddEditProductView.xaml.cs",
                 "region": {
-                  "startLine": 17,
-                  "startColumn": 41,
-                  "endLine": 17,
-                  "endColumn": 140
+                  "startLine": 32,
+                  "startColumn": 17,
+                  "endLine": 32,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/Views/AddEditProductView.xaml.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 13,
+                  "endLine": 30,
+                  "endColumn": 15
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Merge this if statement with its nested one."
+            }
           }
         },
         {
@@ -2232,6 +3449,304 @@
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'ConfigureServices' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/App.xaml.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 18,
+                  "endLine": 29,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'Application_DispatcherUnhandledException' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/App.xaml.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 18,
+                  "endLine": 91,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720110420_InitialCreate.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 26,
+                  "endLine": 68,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720155421_Init3.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'ConfigureServices' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/App.xaml.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 18,
+                  "endLine": 29,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720160926_RemoveStockColumnFromProduct.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 22,
+                  "endLine": 54,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 13,
+                  "endLine": 56,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 17,
+                  "endLine": 64,
+                  "endColumn": 19
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 21,
+                  "endLine": 66,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 21,
+                  "endLine": 71,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 21,
+                  "endLine": 77,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 21,
+                  "endLine": 83,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 21,
+                  "endLine": 89,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 17,
+                  "endLine": 96,
+                  "endColumn": 21
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 21,
+                  "endLine": 98,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 21,
+                  "endLine": 104,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 21,
+                  "endLine": 110,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/AddEditProductViewModel.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 21,
+                  "endLine": 116,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+1",
+              "10": "+2 (incl 1 for nesting)",
+              "11": "+2 (incl 1 for nesting)",
+              "2": "+2 (incl 1 for nesting)",
+              "3": "+2 (incl 1 for nesting)",
+              "4": "+2 (incl 1 for nesting)",
+              "5": "+2 (incl 1 for nesting)",
+              "6": "+2 (incl 1 for nesting)",
+              "7": "+1",
+              "8": "+2 (incl 1 for nesting)",
+              "9": "+2 (incl 1 for nesting)"
+            }
           }
         },
         {
@@ -2277,18 +3792,60 @@
           }
         },
         {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "ruleId": "S3168",
+          "level": "warning",
+          "message": "Return 'Task' instead.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/PRNProject/MiniMartManager/Migrations/20250720110420_InitialCreate.cs",
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
                 "region": {
-                  "startLine": 68,
-                  "startColumn": 26,
-                  "endLine": 68,
-                  "endColumn": 48
+                  "startLine": 73,
+                  "startColumn": 23,
+                  "endLine": 73,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await FindAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/UserDashboardViewModel.cs",
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 39,
+                  "endLine": 159,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1860",
+          "level": "note",
+          "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/PRNProject/MiniMartManager/ViewModels/SalesViewModel.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 17,
+                  "endLine": 64,
+                  "endColumn": 32
                 }
               }
             }
@@ -2296,18 +3853,34 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "paramName": "columns"
+              "DiagnosticPropertyKey": "Count"
             }
           }
         }
       ],
       "rules": {
-        "CA1859": {
-          "id": "CA1859",
-          "shortDescription": "Use concrete types when possible for improved performance",
-          "fullDescription": "Using concrete types avoids virtual or interface call overhead and enables inlining.",
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
           "defaultLevel": "note",
-          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1859",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1860": {
+          "id": "CA1860",
+          "shortDescription": "Avoid using 'Enumerable.Any()' extension method",
+          "fullDescription": "Prefer using 'IsEmpty', 'Count' or 'Length' properties whichever available, rather than calling 'Enumerable.Any()'. The intent is clearer and it is more performant than using 'Enumerable.Any()' extension method.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1860",
           "properties": {
             "category": "Performance",
             "isEnabledByDefault": true,
@@ -2374,28 +3947,14 @@
             ]
           }
         },
-        "CS8625": {
-          "id": "CS8625",
-          "shortDescription": "Cannot convert null literal to non-nullable reference type.",
+        "S1066": {
+          "id": "S1066",
+          "shortDescription": "Mergeable \"if\" statements should be combined",
+          "fullDescription": "Nested code - blocks of code inside blocks of code - is eventually necessary, but increases complexity. This is why keeping the code as flat as possible, by avoiding unnecessary nesting, is considered a good practice.",
           "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8625)",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1066",
           "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
-        "S1135": {
-          "id": "S1135",
-          "shortDescription": "Track uses of \"TODO\" tags",
-          "fullDescription": "Developers often use TODO tags to mark areas in the code where additional work or improvements are needed but are not implemented immediately. However, these TODO tags sometimes get overlooked or forgotten, leading to incomplete or unfinished code. This rule aims to identify and address unattended TODO tags to ensure a clean and maintainable codebase. This description explores why this is a problem and how it can be fixed to improve the overall code quality.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1135",
-          "properties": {
-            "category": "Info Code Smell",
+            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",
@@ -2471,6 +4030,23 @@
             ]
           }
         },
+        "S3168": {
+          "id": "S3168",
+          "shortDescription": "\"async\" methods should not return \"void\"",
+          "fullDescription": "An async method with a void return type does not follow the task asynchronous programming (TAP) model since the return type should be Task or Task<TResult>",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3168",
+          "properties": {
+            "category": "Major Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
         "S3604": {
           "id": "S3604",
           "shortDescription": "Member initializer values should not be redundant",
@@ -2479,6 +4055,40 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3604",
           "properties": {
             "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3776": {
+          "id": "S3776",
+          "shortDescription": "Cognitive Complexity of methods should not be too high",
+          "fullDescription": "This rule raises an issue when the code cognitive complexity of a function is above a certain threshold.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3776",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",
