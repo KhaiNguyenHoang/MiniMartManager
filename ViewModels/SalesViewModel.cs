@@ -9,7 +9,9 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.JavaScript;
 using System.Text;
+using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Xml;
@@ -66,8 +68,8 @@ namespace MiniMartManager.ViewModels
                 .OrderByDescending(item => item.TotalRevenue)
                 .ToListAsync();
             var fileName = $"SalesReport_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.json";
-            var json = JsonSerializer.Serialize(salesData, new JsonSerializerOptions { WriteIndented = true });
-            await using (StreamWriter sw = new(fileName, false, Encoding.UTF8))
+            var json = JsonSerializer.Serialize(salesData, new JsonSerializerOptions { WriteIndented = true, Encoder = JavaScriptEncoder.Create(UnicodeRanges.All) });
+            await using (StreamWriter sw = new(fileName, false, Encoding.Unicode))
             {
                 await sw.WriteAsync(json);
             }
